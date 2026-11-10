@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Intervalo</string>
+
+    <string name="back">Atrás</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="ok">Aceptar</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Borrar</string>
+    <string name="duplicate">Duplicar</string>
+    <string name="more_actions">Más acciones</string>
+
+    <string name="step_work">Trabajo</string>
+    <string name="step_rest">Descanso</string>
+
     <string name="routines_title">Rutinas</string>
-    <string name="routines_empty">Aún no hay rutinas.</string>
+    <string name="routines_empty">Aún no hay rutinas. Toca + para crear una.</string>
+    <string name="routines_new">Nueva rutina</string>
+    <string name="routine_summary">%1$s · %2$s · %3$s</string>
+    <string name="copy_name">%1$s (copia)</string>
+    <string name="delete_routine_title">¿Borrar la rutina?</string>
+    <string name="delete_routine_message">Se borrará \"%1$s\". Las sesiones pasadas se conservan en el historial.</string>
+    <plurals name="rounds_count">
+        <item quantity="one">%d ronda</item>
+        <item quantity="other">%d rondas</item>
+    </plurals>
+    <plurals name="steps_count">
+        <item quantity="one">%d paso</item>
+        <item quantity="other">%d pasos</item>
+    </plurals>
+
+    <string name="editor_title_new">Nueva rutina</string>
+    <string name="editor_title_edit">Editar rutina</string>
+    <string name="routine_not_found">Esta rutina ya no existe.</string>
+    <string name="field_name">Nombre</string>
+    <string name="field_warmup">Calentamiento</string>
+    <string name="field_cooldown">Vuelta a la calma</string>
+    <string name="field_rounds">Rondas</string>
+    <string name="field_step_name">Etiqueta (opcional)</string>
+    <string name="field_seconds">Segundos</string>
+    <string name="color_option">Color de la rutina</string>
+    <string name="steps_header">Pasos</string>
+    <string name="steps_hint">Arrastra el asa para reordenar. Los pasos se repiten en cada ronda.</string>
+    <string name="add_work">Trabajo</string>
+    <string name="add_rest">Descanso</string>
+    <string name="add_step_title">Añadir paso</string>
+    <string name="edit_step">Editar paso</string>
+    <string name="delete_step">Borrar paso</string>
+    <string name="drag_to_reorder">Arrastrar para reordenar</string>
+    <string name="move_up">Subir</string>
+    <string name="move_down">Bajar</string>
+    <string name="decrease">Reducir %1$s</string>
+    <string name="increase">Aumentar %1$s</string>
+    <string name="error_name_blank">Escribe un nombre.</string>
+    <string name="error_name_too_long">Usa como máximo %1$d caracteres.</string>
+    <string name="error_no_steps">Añade al menos un paso.</string>
+    <string name="error_seconds">Introduce un valor de 1 a %1$d.</string>
 </resources>

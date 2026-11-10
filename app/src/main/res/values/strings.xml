@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Intervalo</string>
+
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="duplicate">Duplicate</string>
+    <string name="more_actions">More actions</string>
+
+    <string name="step_work">Work</string>
+    <string name="step_rest">Rest</string>
+
     <string name="routines_title">Routines</string>
-    <string name="routines_empty">No routines yet.</string>
+    <string name="routines_empty">No routines yet. Tap + to create one.</string>
+    <string name="routines_new">New routine</string>
+    <string name="routine_summary">%1$s · %2$s · %3$s</string>
+    <string name="copy_name">%1$s (copy)</string>
+    <string name="delete_routine_title">Delete routine?</string>
+    <string name="delete_routine_message">\"%1$s\" will be deleted. Past sessions are kept in the history.</string>
+    <plurals name="rounds_count">
+        <item quantity="one">%d round</item>
+        <item quantity="other">%d rounds</item>
+    </plurals>
+    <plurals name="steps_count">
+        <item quantity="one">%d step</item>
+        <item quantity="other">%d steps</item>
+    </plurals>
+
+    <string name="editor_title_new">New routine</string>
+    <string name="editor_title_edit">Edit routine</string>
+    <string name="routine_not_found">This routine no longer exists.</string>
+    <string name="field_name">Name</string>
+    <string name="field_warmup">Warm-up</string>
+    <string name="field_cooldown">Cool-down</string>
+    <string name="field_rounds">Rounds</string>
+    <string name="field_step_name">Label (optional)</string>
+    <string name="field_seconds">Seconds</string>
+    <string name="color_option">Routine color</string>
+    <string name="steps_header">Steps</string>
+    <string name="steps_hint">Drag the handle to reorder. The steps repeat in every round.</string>
+    <string name="add_work">Work</string>
+    <string name="add_rest">Rest</string>
+    <string name="add_step_title">Add step</string>
+    <string name="edit_step">Edit step</string>
+    <string name="delete_step">Delete step</string>
+    <string name="drag_to_reorder">Drag to reorder</string>
+    <string name="move_up">Move up</string>
+    <string name="move_down">Move down</string>
+    <string name="decrease">Decrease %1$s</string>
+    <string name="increase">Increase %1$s</string>
+    <string name="error_name_blank">Enter a name.</string>
+    <string name="error_name_too_long">Use at most %1$d characters.</string>
+    <string name="error_no_steps">Add at least one step.</string>
+    <string name="error_seconds">Enter a value from 1 to %1$d.</string>
 </resources>
