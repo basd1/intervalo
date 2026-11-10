@@ -56,4 +56,41 @@
     <string name="error_name_too_long">Use at most %1$d characters.</string>
     <string name="error_no_steps">Add at least one step.</string>
     <string name="error_seconds">Enter a value from 1 to %1$d.</string>
+
+    <string name="phase_warmup">Warm-up</string>
+    <string name="phase_cooldown">Cool-down</string>
+    <string name="open">Open</string>
+    <string name="done">Done</string>
+    <string name="paused">Paused</string>
+    <string name="start_routine">Start %1$s</string>
+    <string name="workout_in_progress">Workout in progress</string>
+    <string name="workout_title">Workout</string>
+    <string name="round_of">Round %1$d of %2$d</string>
+    <string name="next_phase">Next: %1$s (%2$s)</string>
+    <string name="last_phase">Last phase</string>
+    <string name="total_remaining">Total remaining %1$s</string>
+    <string name="ring_description">%1$s, %2$s remaining</string>
+    <string name="workout_complete">Workout complete</string>
+    <string name="workout_complete_summary">%1$s · %2$s</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_resume">Resume</string>
+    <string name="action_skip">Skip phase</string>
+    <string name="action_previous">Previous phase</string>
+    <string name="action_stop">Stop</string>
+
+    <string name="notification_permission_title">Show the workout in notifications?</string>
+    <string name="notification_permission_message">While a workout runs, Intervalo keeps a notification with the time left and pause, skip and stop buttons, so you can control it with the screen off. You can start workouts without it, but you will not see that notification.</string>
+    <string name="notification_permission_allow">Continue</string>
+    <string name="notification_permission_skip">Not now</string>
+
+    <string name="channel_workout">Workout in progress</string>
+    <string name="channel_workout_description">Shows the running workout and its controls.</string>
+    <string name="channel_done">Workout finished</string>
+    <string name="notification_phase_round">%1$s · round %2$d/%3$d</string>
+    <string name="notification_next">Next: %1$s</string>
+    <string name="notification_last_phase">Last phase</string>
+    <string name="notification_paused">%1$s · paused with %2$s left</string>
+    <string name="notification_done_title">Workout complete</string>
+    <string name="notification_done_text">%1$s · %2$s</string>
+
 </resources>
