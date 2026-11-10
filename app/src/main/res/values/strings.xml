@@ -93,4 +93,10 @@
     <string name="notification_done_title">Workout complete</string>
     <string name="notification_done_text">%1$s · %2$s</string>
 
+    <string name="widget_description">Start your last routine or pause the running workout.</string>
+    <string name="widget_ready">Ready</string>
+    <string name="widget_no_routine">Open the app to pick a routine</string>
+    <string name="widget_start">Start</string>
+    <string name="widget_ends_at">Ends at %1$s</string>
+
 </resources>

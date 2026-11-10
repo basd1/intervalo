@@ -95,4 +95,10 @@
     <string name="notification_done_title">Entrenamiento completado</string>
     <string name="notification_done_text">%1$s · %2$s</string>
 
+    <string name="widget_description">Inicia tu última rutina o pausa el entrenamiento en curso.</string>
+    <string name="widget_ready">Listo</string>
+    <string name="widget_no_routine">Abre la app para elegir una rutina</string>
+    <string name="widget_start">Iniciar</string>
+    <string name="widget_ends_at">Termina a las %1$s</string>
+
 </resources>

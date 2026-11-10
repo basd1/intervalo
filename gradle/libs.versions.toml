@@ -42,6 +42,7 @@ androidx-room-testing = { module = "androidx.room:room-testing", version.ref = "
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
 androidx-glance-appwidget = { module = "androidx.glance:glance-appwidget", version.ref = "glance" }
 androidx-glance-material3 = { module = "androidx.glance:glance-material3", version.ref = "glance" }
+androidx-glance-appwidget-testing = { module = "androidx.glance:glance-appwidget-testing", version.ref = "glance" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
 koin-test = { module = "io.insert-koin:koin-test", version.ref = "koin" }

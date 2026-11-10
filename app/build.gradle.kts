@@ -91,6 +91,7 @@ dependencies {
     testImplementation(libs.androidx.test.core)
     testImplementation(libs.androidx.test.junit)
     testImplementation(libs.androidx.room.testing)
+    testImplementation(libs.androidx.glance.appwidget.testing)
 
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)

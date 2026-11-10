@@ -22,6 +22,8 @@ import dev.bastian.intervalo.domain.timer.WorkoutRunner
 import dev.bastian.intervalo.ui.editor.EditorViewModel
 import dev.bastian.intervalo.ui.routines.RoutinesViewModel
 import dev.bastian.intervalo.ui.workout.WorkoutViewModel
+import dev.bastian.intervalo.widget.WidgetModels
+import dev.bastian.intervalo.widget.WidgetUpdater
 import java.io.File
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -68,6 +70,11 @@ val workoutModule = module {
     }
 }
 
+val widgetModule = module {
+    single { WidgetModels(get(), get(), get(), get()) }
+    single { WidgetUpdater(androidContext(), get(), get(APP_SCOPE)) }
+}
+
 val uiModule = module {
     viewModel { RoutinesViewModel(get(), get()) }
     viewModel { (routineId: Long) -> EditorViewModel(routineId, get()) }
@@ -75,4 +82,4 @@ val uiModule = module {
 }
 
 /** All Koin modules of the app, in the order they are loaded. */
-val appModules: List<Module> = listOf(dataModule, workoutModule, uiModule)
+val appModules: List<Module> = listOf(dataModule, workoutModule, widgetModule, uiModule)
