@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Intervalo</string>
+    <string name="routines_title">Routines</string>
+    <string name="routines_empty">No routines yet.</string>
+</resources>
