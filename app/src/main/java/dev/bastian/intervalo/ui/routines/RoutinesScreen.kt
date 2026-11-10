@@ -22,8 +22,10 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.History
 import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -65,6 +67,8 @@ fun RoutinesScreen(
     onNewRoutine: () -> Unit,
     onEditRoutine: (Long) -> Unit,
     onOpenWorkout: () -> Unit,
+    onOpenHistory: () -> Unit,
+    onOpenSettings: () -> Unit,
     viewModel: RoutinesViewModel = koinViewModel(),
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
@@ -100,7 +104,19 @@ fun RoutinesScreen(
     }
 
     Scaffold(
-        topBar = { TopAppBar(title = { Text(stringResource(R.string.routines_title)) }) },
+        topBar = {
+            TopAppBar(
+                title = { Text(stringResource(R.string.routines_title)) },
+                actions = {
+                    IconButton(onClick = onOpenHistory) {
+                        Icon(Icons.Filled.History, contentDescription = stringResource(R.string.history_title))
+                    }
+                    IconButton(onClick = onOpenSettings) {
+                        Icon(Icons.Filled.Settings, contentDescription = stringResource(R.string.settings_title))
+                    }
+                },
+            )
+        },
         floatingActionButton = {
             FloatingActionButton(onClick = onNewRoutine) {
                 Icon(Icons.Filled.Add, contentDescription = stringResource(R.string.routines_new))

@@ -101,4 +101,33 @@
     <string name="widget_start">Iniciar</string>
     <string name="widget_ends_at">Termina a las %1$s</string>
 
+    <string name="history_title">Historial</string>
+    <string name="history_empty">Aún no hay entrenamientos. Termina uno y aparecerá aquí.</string>
+    <string name="history_clear">Borrar historial</string>
+    <string name="history_clear_title">¿Borrar el historial?</string>
+    <string name="history_clear_message">Se borrarán todas las sesiones pasadas. Tus rutinas no se tocan.</string>
+    <string name="this_week">Últimos 7 días</string>
+    <string name="week_summary">%1$s · %2$d min</string>
+    <plurals name="sessions_count">
+        <item quantity="one">%d sesión</item>
+        <item quantity="many">%d sesiones</item>
+        <item quantity="other">%d sesiones</item>
+    </plurals>
+    <string name="session_completed">Completado</string>
+    <string name="session_stopped">Parado antes de tiempo</string>
+
+    <string name="settings_title">Ajustes</string>
+    <string name="setting_sounds">Sonidos</string>
+    <string name="setting_sounds_desc">Pitido al empezar cada fase y al terminar el entrenamiento.</string>
+    <string name="setting_vibration">Vibración</string>
+    <string name="setting_vibration_desc">Vibrar al empezar cada fase y al terminar el entrenamiento.</string>
+    <string name="setting_countdown">Cuenta atrás de 3 segundos</string>
+    <string name="setting_countdown_desc">Pitidos cortos en los tres últimos segundos de cada fase.</string>
+    <string name="setting_keep_screen_on">Mantener pantalla encendida</string>
+    <string name="setting_keep_screen_on_desc">No apagar la pantalla mientras la pantalla de entrenamiento está abierta.</string>
+    <string name="battery_title">Ahorro de batería y límites en segundo plano</string>
+    <string name="battery_message">Algunos móviles detienen las apps que funcionan con la pantalla apagada. Si un entrenamiento se para o los avisos llegan tarde, permite que Intervalo funcione sin restricciones de batería.</string>
+    <string name="battery_open_settings">Abrir ajustes de batería</string>
+    <string name="battery_settings_unavailable">Este móvil no tiene esa pantalla. Busca Intervalo en Ajustes, Aplicaciones, Batería.</string>
+
 </resources>

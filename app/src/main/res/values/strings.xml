@@ -99,4 +99,32 @@
     <string name="widget_start">Start</string>
     <string name="widget_ends_at">Ends at %1$s</string>
 
+    <string name="history_title">History</string>
+    <string name="history_empty">No workouts yet. Finish one and it will show up here.</string>
+    <string name="history_clear">Clear history</string>
+    <string name="history_clear_title">Clear the history?</string>
+    <string name="history_clear_message">All past sessions will be deleted. Your routines are not affected.</string>
+    <string name="this_week">Last 7 days</string>
+    <string name="week_summary">%1$s · %2$d min</string>
+    <plurals name="sessions_count">
+        <item quantity="one">%d session</item>
+        <item quantity="other">%d sessions</item>
+    </plurals>
+    <string name="session_completed">Completed</string>
+    <string name="session_stopped">Stopped early</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="setting_sounds">Sounds</string>
+    <string name="setting_sounds_desc">Beep when a phase starts and when a workout ends.</string>
+    <string name="setting_vibration">Vibration</string>
+    <string name="setting_vibration_desc">Vibrate when a phase starts and when a workout ends.</string>
+    <string name="setting_countdown">3-second countdown</string>
+    <string name="setting_countdown_desc">Short beeps on the last three seconds of every phase.</string>
+    <string name="setting_keep_screen_on">Keep screen on</string>
+    <string name="setting_keep_screen_on_desc">Do not let the screen turn off while the workout screen is open.</string>
+    <string name="battery_title">Battery saver and background limits</string>
+    <string name="battery_message">Some phones stop apps that run with the screen off. If a workout ever stops or its cues are late, allow Intervalo to run without battery restrictions.</string>
+    <string name="battery_open_settings">Open battery settings</string>
+    <string name="battery_settings_unavailable">This phone has no such settings screen. Look for Intervalo under Settings, Apps, Battery.</string>
+
 </resources>

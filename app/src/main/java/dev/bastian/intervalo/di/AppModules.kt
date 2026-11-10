@@ -20,11 +20,14 @@ import dev.bastian.intervalo.domain.SessionRepository
 import dev.bastian.intervalo.domain.SettingsRepository
 import dev.bastian.intervalo.domain.timer.WorkoutRunner
 import dev.bastian.intervalo.ui.editor.EditorViewModel
+import dev.bastian.intervalo.ui.history.HistoryViewModel
 import dev.bastian.intervalo.ui.routines.RoutinesViewModel
+import dev.bastian.intervalo.ui.settings.SettingsViewModel
 import dev.bastian.intervalo.ui.workout.WorkoutViewModel
 import dev.bastian.intervalo.widget.WidgetModels
 import dev.bastian.intervalo.widget.WidgetUpdater
 import java.io.File
+import java.time.ZoneId
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -79,6 +82,8 @@ val uiModule = module {
     viewModel { RoutinesViewModel(get(), get()) }
     viewModel { (routineId: Long) -> EditorViewModel(routineId, get()) }
     viewModel { WorkoutViewModel(get(), get()) }
+    viewModel { HistoryViewModel(get(), get(), ZoneId.systemDefault()) }
+    viewModel { SettingsViewModel(get()) }
 }
 
 /** All Koin modules of the app, in the order they are loaded. */

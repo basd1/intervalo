@@ -7,7 +7,9 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
 import dev.bastian.intervalo.ui.editor.EditorScreen
+import dev.bastian.intervalo.ui.history.HistoryScreen
 import dev.bastian.intervalo.ui.routines.RoutinesScreen
+import dev.bastian.intervalo.ui.settings.SettingsScreen
 import dev.bastian.intervalo.ui.workout.WorkoutScreen
 import kotlinx.serialization.Serializable
 
@@ -20,6 +22,12 @@ data class EditorRoute(val routineId: Long = 0)
 
 @Serializable
 data object WorkoutRoute
+
+@Serializable
+data object HistoryRoute
+
+@Serializable
+data object SettingsRoute
 
 /**
  * @param openWorkoutRequest changes each time something outside the UI (the notification) asks to
@@ -39,8 +47,12 @@ fun IntervaloNavHost(openWorkoutRequest: Int = 0) {
                 onNewRoutine = { navController.navigate(EditorRoute()) },
                 onEditRoutine = { navController.navigate(EditorRoute(it)) },
                 onOpenWorkout = { navController.navigate(WorkoutRoute) { launchSingleTop = true } },
+                onOpenHistory = { navController.navigate(HistoryRoute) },
+                onOpenSettings = { navController.navigate(SettingsRoute) },
             )
         }
+        composable<HistoryRoute> { HistoryScreen(onBack = { navController.popBackStack() }) }
+        composable<SettingsRoute> { SettingsScreen(onBack = { navController.popBackStack() }) }
         composable<EditorRoute> { entry ->
             EditorScreen(
                 routineId = entry.toRoute<EditorRoute>().routineId,
